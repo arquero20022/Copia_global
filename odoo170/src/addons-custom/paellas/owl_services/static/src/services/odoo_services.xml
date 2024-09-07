@@ -1,0 +1,34 @@
+<templates>
+    <t t-name="owl_services.OdooServices">
+        <div class="container mt-2">
+            <button class="btn btn-primary m-2" t-on-click="callBarcodeService">Escanear Código de Barras</button>
+
+            <div class="mt-4">
+                <!-- Campo editable donde se puede modificar el valor leído -->
+                <input type="text" class="form-control"
+                       t-model="state.barcodeValue"
+                       placeholder="Escanea o edita el código de barras aquí" />
+            </div>
+
+            <!-- Mostrar el campo Many2one filtrado según barcode_value -->
+            <div class="mt-4">
+                <label>Evento Relacionado:</label>
+                <select class="form-control">
+                    <t t-if="state.related_event_id">
+                        <option t-esc="state.related_event_id.display_name">Evento: <t t-esc="state.related_event_id.display_name"/></option>
+                    </t>
+                    <t t-else="">
+                        <option>No hay evento relacionado</option>
+                    </t>
+                </select>
+            </div>
+
+            <!-- Botón que llama al método para imprimir el valor del código de barras -->
+            <div class="mt-4">
+                <button class="btn btn-secondary" name="print_barcode_value" type="object">
+                    Imprimir Valor del Código de Barras
+                </button>
+            </div>
+        </div>
+    </t>
+</templates>

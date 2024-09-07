@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="IssueNavigationConfiguration">
+    <option name="links">
+      <list>
+        <IssueNavigationLink>
+          <option name="issueRegexp" value="\bodoo/(\w+)#(\d+)" />
+          <option name="linkRegexp" value="https://github.com/odoo/$1/issues/$2" />
+        </IssueNavigationLink>
+      </list>
+    </option>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/addons-puntsistemes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dev-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/enterprise" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-analytic" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-budgeting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-closing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-financial-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-financial-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-fiscal-rule" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-invoice-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-invoicing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-payment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/account-reconcile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-custom/addons-inpl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-custom/addons-riocabo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-custom/bank-payment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-custom/dev17" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-custom/dev_odoo17" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-external" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/addons-standard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/bank-payment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/bank-statement-import" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/bank-statement-reconcile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/brand" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/business-requirement" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/carrier-delivery" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/commission" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/community-data-files" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/connector" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/contract" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/credit-control" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/crm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/delivery-carrier" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/e-commerce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/edi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/estandar" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/event" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/field-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/geospatial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/helpdesk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/hr" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/hr-attendance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/hr-expense" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/hr-holidays" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/hr-timesheet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/intrastat-extrastat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/knowledge" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/l10n-spain" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/maintenance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/management-system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/manufacture" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/manufacture-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/margin-analysis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/mis-builder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/multi-company" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/partner-contact" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/pos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/product-attribute" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/product-kitting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/product-pack" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/product-variant" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/project-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/purchase-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/purchase-workflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/queue" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/report-print-send" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/reporting-engine" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/rma" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/sale-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/sale-workflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/server-auth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/server-backend" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/server-env" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/server-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/server-ux" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/social" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/stock-logistics-barcode" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/stock-logistics-reporting" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/stock-logistics-tracking" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/stock-logistics-transport" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/stock-logistics-warehouse" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/stock-logistics-workflow" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/web" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/web-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/webkit-tools" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/website" vcs="Git" />
+  </component>
+</project>

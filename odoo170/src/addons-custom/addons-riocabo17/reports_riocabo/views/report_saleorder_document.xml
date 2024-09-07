@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+    <template id="riocabo_psale_order_contact_name" inherit_id="sale.report_saleorder_document" priority="999">
+        <xpath expr="//t[@t-set='address']" position="replace">
+            <t t-set="address">
+                <div><span t-field="doc.partner_id.name" context="{'no_display_commercial': True}"/>:</div>
+                <div t-field="doc.partner_id"  t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;], &quot;no_marker&quot;: True}"/>
+                <p t-if="doc.partner_id.vat"><t t-esc="doc.company_id.country_id.vat_label or 'Tax ID'"/>: <span t-field="doc.partner_id.vat"/></p>
+            </t>
+        </xpath>
+    </template>
+</odoo>

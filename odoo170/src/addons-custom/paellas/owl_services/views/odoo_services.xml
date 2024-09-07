@@ -1,0 +1,14 @@
+<record id="view_custom_barcode_form" model="ir.ui.view">
+    <field name="name">custom.barcode.form</field>
+    <field name="model">custom.barcode.model</field>
+    <field name="arch" type="xml">
+        <form>
+            <sheet>
+                <group>
+                    <field name="name"/>
+                    <field name="barcode_value"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>

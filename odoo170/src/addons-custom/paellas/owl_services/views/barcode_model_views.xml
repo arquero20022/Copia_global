@@ -1,0 +1,37 @@
+<odoo>
+
+
+    <record id="view_custom_barcode_model_form" model="ir.ui.view">
+        <field name="name">custom.barcode.model.form</field>
+        <field name="model">custom.barcode.model</field>
+        <field name="arch" type="xml">
+            <form string="Custom Barcode Model">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="barcode_value"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_custom_barcode_model_tree" model="ir.ui.view">
+        <field name="name">custom.barcode.model.tree</field>
+        <field name="model">custom.barcode.model</field>
+        <field name="arch" type="xml">
+            <tree string="Custom Barcode Model">
+                <field name="name"/>
+                <field name="barcode_value"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="custom_barcode_model_menu" name="Custom Barcode Models" sequence="10"/>
+
+    <act_window id="action_custom_barcode_model"
+                name="Custom Barcode Models"
+                res_model="custom.barcode.model"
+                view_mode="tree,form"
+                menu_id="custom_barcode_model_menu"/>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+     <template id="riocabo_payment_reference" inherit_id="account.report_invoice_document" priority="999">
+         <xpath expr="//p[@name='payment_communication']" position="replace">
+             <span t-if="o.move_type in ('out_invoice', 'in_refund') and
+                   o.payment_reference and o.payment_state != 'paid'" name="payment_communication">
+                 Please use the following communication for your payment :
+
+             </span><span t-field="o.payment_reference"/>
+             <p t-if="o.move_type in ('out_invoice', 'in_refund') and
+                   o.payment_reference and o.payment_state == 'paid'" name="payment_communication">
+                 <b>PAID</b>
+             </p>
+         </xpath>
+
+         <xpath expr="//t[@t-set='address']" position="replace">
+             <t t-set="address">
+                 <div><span t-field="o.partner_id.name" context="{'no_display_commercial': True}"/>:</div>
+                 <address t-field="o.partner_id" t-options="{&quot;widget&quot;: &quot;contact&quot;, &quot;fields&quot;: [&quot;address&quot;], &quot;no_marker&quot;: True}"/>
+                 <div t-if="o.partner_id.vat" class="mt16">
+                     <t t-if="o.company_id.country_id.vat_label" t-esc="o.company_id.country_id.vat_label" id="inv_tax_id_label"/>
+                     <t t-else="">Tax ID</t>: <span t-field="o.partner_id.vat"/></div>
+             </t>
+         </xpath>
+
+        <xpath expr="//div[hasclass('mt16')]" position="replace">
+         </xpath>
+
+         <xpath expr="//div[@id='informations']" position="inside">
+             <div class="col-auto col-3 mw-100 mb-2" t-if="o.partner_id.vat" name="customer_vat">
+                 <strong><t t-if="o.company_id.country_id.vat_label" t-esc="o.company_id.country_id.vat_label" id="inv_tax_id_label"/>
+                     <t t-else="">NIF</t></strong>
+                 <p class="m-0" t-field="o.partner_id.vat"/>
+             </div>
+         </xpath>
+     </template>
+
+    <template id="riocabo_layout_striped" inherit_id="web.external_layout_striped" priority="999">
+
+        <xpath expr="//li[contains(@t-if, 'not forced_vat')]" position="before">
+             <div style="margin-top: -15px;margin-bottom: -15px;">
+             <strong ><t t-if="company.country_id.vat_label" t-esc="company.country_id.vat_label" id="inv_tax_id_label"/>
+                 <t t-else="">NIF</t></strong>
+             <span class="m-0" t-field="company.partner_id.vat"/>
+             <ul class="list-inline">
+                 <li t-if="company.phone" class="list-inline-item"><i class="fa fa-phone" role="img" aria-label="Phone" title="Phone"/> <span class="o_force_ltr" t-field="company.phone"/></li>
+                 <li t-if="company.email" class="list-inline-item"><i class="fa fa-at" role="img" aria-label="Email" title="Email"/> <span t-field="company.email"/></li>
+             </ul>
+            </div>
+
+         </xpath>
+       <xpath expr="//div[@t-attf-class='o_company_#{company.id}_layout footer o_background_footer']" position="replace">
+             <div t-attf-class="o_company_#{company.id}_layout footer o_background_footer" style="font-size: 6px !important; line-height: 6px">
+            <div class="text-center">
+                <ul class="list-inline">
+                    <div t-field="company.report_footer"/>
+                </ul>
+                <div t-if="report_type == 'pdf'" class="text-muted">
+                    Page:
+                    <span class="page"/>
+                    of
+                    <span class="topage"/>
+                </div>
+                <div t-if="report_type == 'pdf' and display_name_in_footer" class="text-muted">
+                    <span t-out="o.name">(document name)</span>
+                </div>
+            </div>
+        </div>
+
+         </xpath>
+
+
+    </template>
+
+
+
+</odoo>
